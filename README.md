@@ -16,6 +16,15 @@ This contains the vagrant config necessary for running mysql with flyway
 - username: root
 - password: root
 
+### Pulling down from Vagrant Cloud
+
+    This is available as a pre-built box as 'cbmatthews/mysql-flyway':
+    
+    $ vagrant init cbmatthews/mysql-flyway
+    $ vagrant up
+    $ vagrant ssh
+
+    ...if you install it this way, port 3306 will not be exposed to your host system by default; you would need to add the port mapping in your Vagrantfile.
 
 ### Warning
 
