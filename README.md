@@ -1,20 +1,21 @@
-# mysql-vagrant
+# mysql-flyway-vagrant
 
-mysql-vagrant is a quick way to run mysql locally for development without an ssh tunnel
+This is a fork of https://github.com/AlexDisler/mysql-vagrant
 
-### Start server
+This contains the vagrant config necessary for running mysql with flyway
+
+### Start and login
 
      $ vagrant up
+     $ vagrant ssh
+     ...from here, you can run flyway from within the vm:
+     $ flyway migrate
 
-### Connect to mysql:
+### mysql credentials
 
-- host: 33.33.33.1
 - username: root
 - password: root
 
-### From sequel pro
-
-<img src="sequel-pro.png"/>
 
 ### Warning
 
