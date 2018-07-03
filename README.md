@@ -8,7 +8,9 @@ This contains the vagrant config necessary for running mysql with flyway
 
      $ vagrant up
      $ vagrant ssh
-     ...from here, you can run flyway from within the vm:
+
+...from here, you can run flyway from within the vm:
+
      $ flyway migrate
 
 ### mysql credentials
@@ -18,13 +20,13 @@ This contains the vagrant config necessary for running mysql with flyway
 
 ### Pulling down from Vagrant Cloud
 
-    This is available as a pre-built box as 'cbmatthews/mysql-flyway':
+This is available as a pre-built box as 'cbmatthews/mysql-flyway':
     
     $ vagrant init cbmatthews/mysql-flyway
     $ vagrant up
     $ vagrant ssh
 
-    ...if you install it this way, port 3306 will not be exposed to your host system by default; you would need to add the port mapping in your Vagrantfile.
+...if you install it this way, port 3306 will not be exposed to your host system by default; you would need to add the port mapping in your Vagrantfile.
 
 ### Warning
 
