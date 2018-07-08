@@ -18,6 +18,10 @@ sed -i "s/^bind-address/#bind-address/" /etc/mysql/mysql.conf.d/mysqld.cnf
 mysql -u root -proot -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'root' WITH GRANT OPTION; FLUSH PRIVILEGES; SET GLOBAL max_connect_errors=10000;"
 /etc/init.d/mysql restart
 
+#allow ssh password authentication...
+sed -i "s/^PasswordAuthentication no/PasswordAuthentication yes/" /etc/ssh/sshd_config
+service ssh restart
+
 #install flyway
 wget -q http://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/5.1.3/flyway-commandline-5.1.3-linux-x64.tar.gz
 #extract flyway
