@@ -4,6 +4,10 @@ This is a fork of https://github.com/AlexDisler/mysql-vagrant
 
 This contains the vagrant config necessary for running mysql with flyway
 
+See the full youtube video explaining this here:
+https://www.youtube.com/watch?v=e8zGQO68hTY
+
+
 ### Start and login
 
      $ vagrant up
